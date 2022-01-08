@@ -7,6 +7,9 @@
     @apply bg-gray-900;
     @apply text-gray-300;
   }
+  a {
+    @apply text-blue-400;
+  }
   h1 {
     @apply text-3xl;
     @apply font-bold;

@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import fs from 'fs'
 
-export default function Page({ data }) {
+export default function Page() {
   const [buttonColor, setButtonColor] = useState('yellow')
   return (
     <div>
-      <div>{data}</div>
       {buttonColor === 'yellow' ? (
         <YellowButton setButtonColor={setButtonColor} />
       ) : (
@@ -41,27 +39,4 @@ function GreenButton({ setButtonColor }) {
       Switch To Yellow
     </button>
   )
-}
-
-export async function getStaticProps(context) {
-  console.log(__dirname)
-  try {
-    console.log(__dirname)
-    const data = fs.readFileSync(
-      `./pages/switch-components-via-state.js`,
-      `utf8`
-    )
-    return {
-      props: {
-        data: data,
-      },
-    }
-  } catch (err) {
-    console.log(err)
-    return {
-      props: {
-        data: `could not find file`,
-      },
-    }
-  }
 }
