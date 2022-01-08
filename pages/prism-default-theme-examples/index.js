@@ -12,13 +12,13 @@ export default function Page() {
   ]
   return (
     <ul>
-      <li>
+      <li key="prism">
         <Link href={`/prism-default-theme-examples/prism`}>
           <a>Prism</a>
         </Link>
       </li>
       {themes.map((theme) => (
-        <li>
+        <li key={theme}>
           <Link href={`/prism-default-theme-examples/${theme.toLowerCase()}`}>
             <a>{theme}</a>
           </Link>

@@ -23,10 +23,10 @@ export default function Page({ textOfFile }) {
   // <div dangerouslySetInnerHTML={{ __html: highlights }} />
 
   return (
-    <div class="line-numbers">
+    <div className="line-numbers">
       <Code />
-      <pre class="line-numbers">
-        <code class="language-css">{textOfFile}</code>
+      <pre className="line-numbers">
+        <code className="language-css">{textOfFile}</code>
       </pre>
     </div>
   )
