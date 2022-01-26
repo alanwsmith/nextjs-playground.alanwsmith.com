@@ -1,6 +1,24 @@
-export default function Favicons() {
+import Head from 'next/head'
+
+export default function HeadTag({ description, image, title, type, url }) {
   return (
-    <>
+    <Head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>{title}</title>
+      <meta name="description" content={description} />
+
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={image} />
+      <meta property="og:title" content={title} />
+      <meta property="og:type" content={type} />
+      <meta property="og:url" content={url} />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@theidofalan" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:image" content={image} />
       <link
         rel="icon"
         type="image/png"
@@ -52,6 +70,6 @@ export default function Favicons() {
         sizes="180x180"
         href="/favicons/180x180.png"
       />
-    </>
+    </Head>
   )
 }

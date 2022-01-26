@@ -1,5 +1,5 @@
 {
-  "name": "scratchpad.alanwsmith.com",
+  "name": "nextjs-scratchpad.alanwsmith.com",
   "private": true,
   "scripts": {
     "dev": "next dev",
