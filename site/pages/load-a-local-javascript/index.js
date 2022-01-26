@@ -19,6 +19,7 @@ export default function Page(props) {
       </p>
       <div>{props.script_js}</div>
       <Script
+        id="test_script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: props.script_js,
