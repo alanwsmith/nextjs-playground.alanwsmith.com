@@ -39,6 +39,11 @@ export default function Home() {
             <a>load-a-local-javascript</a>
           </Link>
         </li>
+        <li>
+          <Link href="/prism-themes">
+            <a>prism-themes</a>
+          </Link>
+        </li>
       </ul>
     </>
   )
