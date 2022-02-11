@@ -5,43 +5,28 @@ export default function Home() {
   return (
     <>
       <HeadTag
-        description="Next.js App Starter from Alan W. Smith"
-        image="https://nextjs-app-starter.alanwsmith.com/og-images/main.png"
-        title="Next.js App Starter from Alan W. Smith"
+        description="A Next.js scratchpad from Alan W. Smith"
+        image="https://nextjs-scratchpad.alanwsmith.com/og-images/main.png"
+        title="The Next.js Scratchpad Of Alan"
         type="website"
-        url="https://nextjs-app-starter.alanwsmith.com"
+        url="https://nextjs-scratchpad.alanwsmith.com"
       />
-      <h2>Notes</h2>
-      <ul>
-        <li>This is a basic Next.js starter with tailwind installed</li>
-        <li>
-          Some basic styles are applied in <code>styles/global.css</code>
-        </li>
-        <li>
-          A basic global layout is defined in{' '}
-          <code>components/LayoutMain.js</code>
-        </li>
-        <li>
-          The <code>HeadTag</code> component sets metadata, favicons, and open
-          graph images
-        </li>
-      </ul>
-      <h2>Next steps:</h2>
-      <ul>
-        <li>
-          Update favicons under <code>public/favicons</code>
-        </li>
-      </ul>
+      <h1>Next.js Scratchpad</h1>
+      <p>
+        This is a little scratchpad for me to play around with Next.js to figure
+        it out
+      </p>
 
+      <h3>Pages</h3>
       <ul>
         <li>
-          <Link href="/load-a-local-javascript">
-            <a>load-a-local-javascript</a>
+          <Link href="/prism-themes-dark">
+            <a>prism-themes-dark</a>
           </Link>
         </li>
         <li>
-          <Link href="/prism-themes">
-            <a>prism-themes</a>
+          <Link href="/prism-themes-light">
+            <a>prism-themes-light</a>
           </Link>
         </li>
       </ul>
