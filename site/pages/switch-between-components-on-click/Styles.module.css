@@ -1,0 +1,10 @@
+.btn {
+  @apply mt-3;
+  @apply bg-blue-800;
+  @apply hover:bg-blue-900;
+  @apply p-2;
+  @apply text-gray-200;
+  @apply rounded-md;
+  @apply border;
+  @apply border-gray-900;
+}
