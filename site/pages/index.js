@@ -20,6 +20,11 @@ export default function Home() {
       <h3>Pages</h3>
       <ul>
         <li>
+          <Link href="/switch-between-react-components-with-an-onclick-event">
+            <a>Switch Between React Component with an onClick Event</a>
+          </Link>
+        </li>
+        <li>
           <Link href="/prism-themes-dark">
             <a>prism-themes-dark</a>
           </Link>

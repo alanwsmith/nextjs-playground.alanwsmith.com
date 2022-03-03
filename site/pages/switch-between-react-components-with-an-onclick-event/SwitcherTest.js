@@ -10,7 +10,7 @@ function ComponentTwo() {
 }
 
 export default function SwitcherTest() {
-  const theComponents = [<ComponentOne />, <ComponentTwo />]
+  const theComponents = [<ComponentOne key="c1" />, <ComponentTwo key="c2" />]
   const [pointer, setPointer] = useState(0)
 
   const switchComponents = () => {

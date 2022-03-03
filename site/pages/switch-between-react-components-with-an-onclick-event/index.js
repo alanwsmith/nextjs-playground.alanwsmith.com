@@ -13,6 +13,11 @@ export default function Page({ fileAsString }) {
         it&apos;s the recommended way or if there are issues with it. So,
         consider this page pending until I get some feedback on it.
       </p>
+      <p>
+        (I had to add &apos;key&apos; attributes to the components in the array which
+        feels weird. That&apos;s part of what makes me think I&apos;m not doing
+        this in the generally recommended way)
+      </p>
       <h2>Example</h2>
       <p>
         Here&apos;s a working example. Click the &quot;Switch Componenets&quot;
@@ -42,7 +47,7 @@ export default function Page({ fileAsString }) {
 export async function getStaticProps(context) {
   try {
     const fileText = fs.readFileSync(
-      `./pages/switch-between-components-on-click/SwitcherTest.js`,
+      `./pages/switch-between-react-components-with-an-onclick-event/SwitcherTest.js`,
       `utf8`
     )
     return {
