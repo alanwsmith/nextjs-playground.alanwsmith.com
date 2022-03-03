@@ -24,7 +24,7 @@ export default function SwitcherTest() {
   return (
     <div>
       {theComponents[pointer]}
-      <button className={style.btn} onClick={switchComponents}>
+      <button className={style.btn} onClick={() => switchComponents()}>
         Switch Components
       </button>
     </div>
